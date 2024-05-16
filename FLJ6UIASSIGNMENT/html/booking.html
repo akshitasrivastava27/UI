@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JashnGala</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+   <!-- for modal -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <link rel="stylesheet" href="../css/booking.css">
+ <script src="../jscript/index.js"></script>
+</head>
+<body>
+  <nav class="navbar bg-dark border-bottom border-bod">
+    <div class="container-fluid"> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none; background: none;">
+        <span ></span><i class="fa-solid fa-bars" style="color: #B197FC;"></i></span> 
+      </button>
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="../images/logo.png" alt="logo" style="height: 60px;">
+      </a>
+      <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              HOME<br>
+                ABOUT <br>
+                FAQs (needs to be added!!!)
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="btn" type="button"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #B197FC;"></i></i></button>
+        <button class="btn" type="button" onclick="HomePage();">
+          <i class="fa-solid fa-user fa-xl" style="color: #B197FC;"></i>
+        </button>
+      </div>
+    </div>
+</nav>
+<div class="form-background">
+  <div class="container">
+    <h2 class="text-center">Please enter your Details:</h2>
+    <form>
+      <!-- First name -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-8">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+      </div>
+      <!-- Last name -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-8">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+      </div>
+      <!-- Number of people attending -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-auto text-center">
+          <label for="number" class="col-form-label">Number of people attending:</label>
+        </div>
+        <div class="col-auto">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button" id="decrease" onclick="decreaseValue()">-</button>
+            </div>
+            <input type="number" class="form-control" id="number" value="0" style="text-align: center;">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="increase" onclick="increaseValue()">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Special requirements -->
+      <div class="row justify-content-center mb-3">
+        <div class="col-12 col-md-8">
+          <label for="exampleFormControlTextarea1" class="form-label"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Any special requirement? Please specify, if any"rows="3"></textarea>
+        </div>
+      </div>
+      <!-- Buttons -->
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <button class="btn custom-btn" type="button" onclick="HomePage();">Go Back</button>
+          <button class="btn custom-btn" type="button" onclick="ConfirmationPage();">Submit</button>
+        </div>
+      </div>  
+    </form>
+</div>
+
+</div>
+
+
+<footer>
+  <ul>
+    <p>&copy; 2024 JashnGala</p>
+    <li><a href="#">Instgaram</a> </li>
+    <li><a href="#">Whatsapp</a></li>
+    <li><a href="#"> More From Us</a></li>
+  </ul>
+  </footer>
+</body>
+</html>
+
